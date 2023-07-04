@@ -104,6 +104,8 @@ CMD ["node", "index.js"]
 run
 
 > docker build . -t myserver
+<img width="1021" alt="Screenshot 2023-07-04 at 6 31 18 PM" src="https://github.com/Glow-in-the-dark/nginxLoadBalancer/assets/2751458/4f041be9-5b82-4059-89ab-9ba29b75c99c">
+
 
 (-t flag is to tag it with a name, in this case we name it "myserver")
 
@@ -114,6 +116,9 @@ run
 > docker run -p 3333:7777 -d myserver
 
 > docker run -p 4444:7777 -d myserver
+
+<img width="1242" alt="Screenshot 2023-07-04 at 6 31 52 PM" src="https://github.com/Glow-in-the-dark/nginxLoadBalancer/assets/2751458/c3a517f5-1486-47ca-9ce2-387ea853bcfe">
+
 
 to spin out 4 servers, which we map the different ports to the ports of the NGINX server to the opened ports in the docker container which is 7777
 
